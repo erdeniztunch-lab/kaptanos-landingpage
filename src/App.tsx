@@ -533,6 +533,12 @@ function App() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Content */}
             <div className="text-left">
@@ -563,6 +569,10 @@ function App() {
                   <div className="flex items-center space-x-2">
                     <div className="w-3 h-3 bg-white/30 rounded-full"></div>
                     <div className="w-3 h-3 bg-white/30 rounded-full"></div>
+                    <div className="w-3 h-3 bg-white/30 rounded-full"></div>
+                    <span className="text-white/90 text-sm ml-4">BuildFlow Dashboard</span>
+                  </div>
+                </div>
                 <div className="p-6">
                   <div className="space-y-6">
                     <div className="space-y-3">
@@ -577,7 +587,7 @@ function App() {
                           <span className="text-blue-600 text-xs">Ready to approve</span>
                         </div>
                       </div>
-              </p>
+                    </div>
                     
                     <div className="space-y-3">
                       <h3 className="font-semibold text-gray-900 text-sm">Quote Comparison</h3>
@@ -590,7 +600,7 @@ function App() {
                           <span>Supplier B</span>
                           <span className="text-gray-500">Standard</span>
                         </div>
-                <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
+                      </div>
                     </div>
                     
                     <div className="space-y-3">
@@ -598,15 +608,62 @@ function App() {
                       <div className="bg-gradient-to-r from-[#CDF5FD]/50 to-[#A0E9FF]/50 backdrop-blur-sm p-4 rounded-lg text-center border border-white/20">
                         <div className="text-2xl font-bold text-[#00A9FF]">$47,500</div>
                         <div className="text-sm text-gray-600">Total saved</div>
-            <div>
-              <h3 className="font-semibold mb-4">Contact</h3>
-                  <span>hello@kaptanos.com</span>
-                </li>
-              </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               
               {/* Floating elements for visual interest */}
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-[#89CFF3]/30 rounded-full blur-sm"></div>
               <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-[#A0E9FF]/40 rounded-full blur-sm"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="w-8 h-8 bg-gradient-to-r from-[#00A9FF] to-[#89CFF3] rounded-lg flex items-center justify-center">
+                  <Building2 className="w-5 h-5 text-white" />
+                </div>
+                <span className="text-xl font-bold">Kaptanos</span>
+              </div>
+              <p className="text-gray-400">
+                Automate your construction material purchases with AI-powered quote collection and comparison.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold mb-4">Product</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li><a href="#" className="hover:text-white transition-colors">Features</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Demo</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold mb-4">Company</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li><a href="#" className="hover:text-white transition-colors">About</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold mb-4">Contact</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li className="flex items-center">
+                  <Mail className="w-4 h-4 mr-2" />
+                  <span>hello@kaptanos.com</span>
+                </li>
+              </ul>
             </div>
           </div>
           
