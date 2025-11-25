@@ -163,7 +163,7 @@ function App() {
               <div className="w-8 h-8 bg-gradient-to-r from-[#00A9FF] to-[#89CFF3] rounded-lg flex items-center justify-center shadow-lg">
                 <Building2 className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-gray-900">BuildFlow</span>
+              <span className="text-xl font-bold">Kaptanos</span>
             </div>
             
             {/* Navigation Links */}
@@ -533,70 +533,85 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Final CTA Section */}
-      <section className="py-20 relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#00A9FF] to-[#89CFF3] opacity-90"></div>
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Start automating your purchases today
-          </h2>
-          <p className="text-xl text-white/90 mb-8">
-            See how much time and money you can save with a free demo
-          </p>
-          <button 
-            onClick={() => setShowDemoModal(true)}
-            className="bg-white text-[#00A9FF] px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-50 transform hover:scale-105 transition-all duration-200 shadow-xl"
-          >
-            Get Free Demo
-          </button>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-900/95 backdrop-blur-lg text-white py-12 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="col-span-2">
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-[#00A9FF] to-[#89CFF3] rounded-lg flex items-center justify-center">
-                  <Building2 className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-xl font-bold">BuildFlow</span>
-              </div>
-              <p className="text-gray-400 mb-4">
-                Smart platform that automates OPEX processes for construction companies
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Content */}
+            <div className="text-left">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                Automate your construction{' '}
+                <span className="bg-gradient-to-r from-[#00A9FF] to-[#89CFF3] bg-clip-text text-transparent">
+                  material purchases
+                </span>{' '}
+                in minutes
+              </h1>
+              
+              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+                Submit request → AI collects quotes → quick approval → order placed. 
+                Save time, reduce costs, eliminate paperwork.
               </p>
+              
+              <button 
+                onClick={() => setShowDemoModal(true)}
+                className="bg-gradient-to-r from-[#00A9FF] to-[#89CFF3] text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-[#89CFF3] hover:to-[#A0E9FF] transform hover:scale-105 transition-all duration-200 shadow-xl hover:shadow-2xl"
+              >
+                See How It Works
+              </button>
             </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4">Company</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
+            {/* Right side - Dashboard */}
+            <div className="relative">
+              <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl border border-white/30 overflow-hidden transform hover:scale-105 transition-all duration-300">
+                <div className="bg-gradient-to-r from-[#00A9FF] to-[#89CFF3] p-4">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-3 h-3 bg-white/30 rounded-full"></div>
+                    <div className="w-3 h-3 bg-white/30 rounded-full"></div>
+                <div className="p-6">
+                  <div className="space-y-6">
+                    <div className="space-y-3">
+                      <h3 className="font-semibold text-gray-900 text-sm">Pending Requests</h3>
+                      <div className="space-y-2">
+                        <div className="bg-[#CDF5FD]/50 backdrop-blur-sm p-3 rounded-lg text-sm border border-white/20 flex justify-between items-center">
+                          <span>Cement - 50 tons</span>
+                          <span className="text-orange-600 text-xs">Collecting quotes</span>
+                        </div>
+                        <div className="bg-[#A0E9FF]/50 backdrop-blur-sm p-3 rounded-lg text-sm border border-white/20 flex justify-between items-center">
+                          <span>Steel - 100 kg</span>
+                          <span className="text-blue-600 text-xs">Ready to approve</span>
+                        </div>
+                      </div>
+              </p>
+                    
+                    <div className="space-y-3">
+                      <h3 className="font-semibold text-gray-900 text-sm">Quote Comparison</h3>
+                      <div className="space-y-2">
+                        <div className="flex justify-between items-center bg-green-50/70 backdrop-blur-sm p-3 rounded-lg text-sm border border-white/20">
+                          <span>Supplier A</span>
+                          <span className="text-green-600 font-semibold">15% savings</span>
+                        </div>
+                        <div className="bg-gray-50/70 backdrop-blur-sm p-3 rounded-lg text-sm flex justify-between border border-white/20">
+                          <span>Supplier B</span>
+                          <span className="text-gray-500">Standard</span>
+                        </div>
                 <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
-              </ul>
-            </div>
-            
+                    </div>
+                    
+                    <div className="space-y-3">
+                      <h3 className="font-semibold text-gray-900 text-sm">This Month's Savings</h3>
+                      <div className="bg-gradient-to-r from-[#CDF5FD]/50 to-[#A0E9FF]/50 backdrop-blur-sm p-4 rounded-lg text-center border border-white/20">
+                        <div className="text-2xl font-bold text-[#00A9FF]">$47,500</div>
+                        <div className="text-sm text-gray-600">Total saved</div>
             <div>
               <h3 className="font-semibold mb-4">Contact</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li className="flex items-center space-x-2">
-                  <Mail className="w-4 h-4" />
-                  <span>hello@buildflow.com</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <Users className="w-4 h-4" />
-                  <span>Support</span>
+                  <span>hello@kaptanos.com</span>
                 </li>
               </ul>
+              
+              {/* Floating elements for visual interest */}
+              <div className="absolute -top-4 -right-4 w-8 h-8 bg-[#89CFF3]/30 rounded-full blur-sm"></div>
+              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-[#A0E9FF]/40 rounded-full blur-sm"></div>
             </div>
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 BuildFlow. All rights reserved.</p>
+            <p>&copy; 2024 Kaptanos. All rights reserved.</p>
           </div>
         </div>
       </footer>
